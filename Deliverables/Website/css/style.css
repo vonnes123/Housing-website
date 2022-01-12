@@ -97,19 +97,27 @@ footer{
 }
 .login{
     margin-top: 7rem;
-    min-height: 40rem;
-    width: 50%;
-    background-color: #557A95;
+    min-height: 30rem;
+    width: 30%;
+    background-color: white;
+    border: #557A95 solid 10px;
+    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
+    padding: 2rem;
+    color: #557A95;
 }
 .aboutus{
     margin-top: 3rem;
-    min-height: 50rem;
+    min-height: 45rem;
     width: 70%;
-    background-color: #557A95;
+    background-color: white;
+    border: #557A95 solid 10px;
+    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    padding: 20px;
 }
 .homefilters{
     display: flex;
@@ -184,6 +192,7 @@ input{
     font-size: 0.85rem;
     box-sizing: border-box;
 }
+/*<<<<<<< HEAD*/
 
 .housepagecontent{
 
@@ -254,4 +263,59 @@ hr.divider{
     top: 10px;
     margin: 10px;
     font-size: 25px4;
+}
+.herobox1{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.herobox1 p{
+    margin-top: 20px;
+    font-size: 1.7rem;
+}
+.herobox2{
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 20px;
+}
+.teamimg{
+    width: auto;
+    height: 400px;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.login h1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.noaccount{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.login input{
+    width: 100%;
+}
+.inputwrapper {
+    margin-bottom: 30px;
+}
+.forgotpassword{
+    text-align: right;
+    font-size: 0.8rem;
+    color:#557A95;
+}
+.names{
+    display: flex;
+}
+.checks{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+.box1{
+    margin-right: 5px;
+}
+.box2{
+    margin-left: 5px ;
+
 }
