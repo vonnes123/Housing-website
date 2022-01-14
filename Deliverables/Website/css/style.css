@@ -21,7 +21,8 @@ header{
     margin-right: auto;
 }
 .logo{
-    background-color: blueviolet;
+    height: auto;
+    width: 1rem;
 }
 .navbutton{
     padding: 15px 30px;
@@ -192,14 +193,6 @@ input{
     font-size: 0.85rem;
     box-sizing: border-box;
 }
-/*<<<<<<< HEAD*/
-
-.housepagecontent{
-
-
-
-}
-
 
 .price{
 
