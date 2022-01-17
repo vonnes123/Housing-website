@@ -161,23 +161,12 @@ footer{
     background-color: #557A95;
     width: 35%;
 }
-.house1{
+.house{
     min-height: 25rem;
-    width: 57rem;
+    width: 95%;
     background-color: #6893b1;
     margin: 30px 20px;
-}
-.house2{
-    min-height: 25rem;
-    width: 57rem;
-    background-color: #6893b1;
-    margin: 30px 20px;
-}
-.house3{
-    min-height: 25rem;
-    width: 57rem;
-    background-color: #6893b1;
-    margin: 30px 20px;
+    display: flex;
 }
 .housepage{
     margin-top: 3rem;
@@ -371,4 +360,43 @@ h1{
     bottom: 210px;
     left: 550px;
     font-size: 20px;
+}
+
+.house-herobox-img{
+    height: 15rem;
+    width: auto;
+    margin: 30px;
+}
+.house-herobox-text{
+    color: white;
+    padding: 20px;
+}
+.house-herobox-text p{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.house-herobox-text h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.search-filters-small{
+    margin: 40px 20px 20px;
+    width: 40%;
+}
+.search-filters-big{
+    margin: 40px 20px 20px;
+    width: 70%;
+}
+.filters h1{
+    color: white;
+    margin-top: 20px;
+}
+.checkbox{
+    margin-left: 20px;
+}
+.label-text{
+    color: white;
+    font-size: 1.3rem;
 }
