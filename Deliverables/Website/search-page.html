@@ -32,7 +32,7 @@
 
         </div>
         <div class="resultbox">
-            <ul class="houses">
+            <ul class="houses" id="houses">
                 <a href="house-page.html">
                     <li class="house">
                         <div>
@@ -53,10 +53,16 @@
                                 -Bathroom:shared(1)
                             </p>
                             <p>
-                                -Total rooms: 5
+                                -Total rooms: <span class="numberofrooms">5</span>
                             </p>
+                            <p class="housingType none">
+                                house
+                            </p>
+                            <h3 class="numberofrooms none">
+                                5
+                            </h3>
                             <h2>
-                                Price: $1500/mo
+                                Price: $<span class="searchprice">1500</span>/mo
                             </h2>
                         </div>
                     </li>
@@ -81,10 +87,16 @@
                                     -Facilities not shared
                                 </p>
                                 <p>
-                                    -Total rooms: 3
+                                    -Total rooms: <span class="numberofrooms">3</span>
                                 </p>
+                                <p class="housingType none">
+                                    aparment
+                                </p>
+                                <h3 class="numberofrooms none">
+                                    3
+                                </h3>
                                 <h2>
-                                    Price: $2500/mo
+                                    Price: $<span class="searchprice">2500</span>/mo
                                 </h2>
                             </div>
                     </li>
@@ -109,16 +121,22 @@
                                     Facilities not shared
                                 </p>
                                 <p>
-                                    -Total rooms: 30
+                                    -Total rooms: <span class="numberofrooms">30</span>
                                 </p>
+                                <p class="housingType none">
+                                    castle
+                                </p>
+                                <h3 class="numberofrooms none">
+                                    30
+                                </h3>
                                 <h2>
-                                    Price: $10000/mo
+                                    Price: $<span class="searchprice">10000</span>/mo
                                 </h2>
                             </div>
                     </li>
                 </a>
                 <a href="#">
-                    <li class="house">
+                    <li class="house" dvPassport>
                         <div>
                             <img src="images/apartment2.jpg" alt="apartment picture" class="house-herobox-img">
                             </div>
@@ -137,10 +155,16 @@
                                     -Facilities shared
                                 </p>
                                 <p>
-                                    -Total rooms: 3
+                                    -Total rooms: <span class="numberofrooms">3</span>
                                 </p>
+                                <p class="housingType none">
+                                    aparment
+                                </p>
+                                <h3 class="numberofrooms none">
+                                    3
+                                </h3>
                                 <h2>
-                                    Price: $1000/mo
+                                    Price: $<span class="searchprice">1000</span>/mo
                                 </h2>
                             </div>
                     </li>
@@ -148,16 +172,16 @@
             </ul>
             <div class="filters">
                 <h1>Filters</h1>
-                <input type="text" placeholder="City" class="search-filters-small">
+                <input type="text" placeholder="City" class="search-filters-small" id="filter-city-names">
                 <input type="text" placeholder="Radius" class="search-filters-small">
-                <input type="text" placeholder="Min. price" class="search-filters-small">
+                <input type="text" placeholder="Min. price" class="search-filters-small" id="filter-min-price">
                 <input type="text" placeholder="Max. price" class="search-filters-small">
                 <input type="text" placeholder="Min. size" class="search-filters-big">
-                <input type="text" placeholder="Housing type" class="search-filters-big">
+                <input type="text" placeholder="Housing type" class="search-filters-big" id="filter-housing-type">
                 <input type="text" placeholder="Maximum Occupants" class="search-filters-big">
-                <input type="text" placeholder="Floor" class="search-filters-big">
+                <input type="text" placeholder="Number of rooms" class="search-filters-big" id="filter-number-rooms">
                 <div class="inputwrapper">
-                    <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" id="GWEcheck">
                     <label for="G/W/E" class="label-text">Gas/Water/Electricity included</label>
                 </div>
                 <div class="inputwrapper">
@@ -171,5 +195,6 @@
 
 
     </footer>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
