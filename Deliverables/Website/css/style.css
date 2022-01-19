@@ -527,3 +527,30 @@ hr{
 .login a{
     color: darkviolet;
 }
+
+.contact-owner-con{
+    margin-top: 3rem;
+    min-height: 25rem;
+    width: 40%;
+    background-color: white;
+    border: #557A95 solid 10px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 30px;
+}
+
+.contactownertext{
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-owner-con input{
+    width: 100%;
+}
+
