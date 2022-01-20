@@ -1,3 +1,5 @@
+//this filter model was created using the information from this video: https://www.youtube.com/watch?v=G1eW3Oi6uoc
+
 let filterCityNamesInput = document.getElementById('filter-city-names');
 
 filterCityNamesInput.addEventListener('keyup', filterCityNames);
