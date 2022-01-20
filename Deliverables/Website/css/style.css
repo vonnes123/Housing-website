@@ -52,7 +52,7 @@ nav{
     margin-left: 1rem;
 }
 .container{
-    background-image: url(/Deliverables/Website/images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 60rem;
