@@ -53,6 +53,8 @@ nav{
 }
 .container{
     background-image: url(/Deliverables/Website/images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 60rem;
     width: 100%;
     padding-top: 6rem;
