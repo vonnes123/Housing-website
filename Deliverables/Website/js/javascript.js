@@ -16,7 +16,7 @@ function filterCityNames(){
         let h1 = li[index].getElementsByTagName('h1')[0];
 
         if(h1.innerHTML.toUpperCase().indexOf(filterCityValue) > -1){
-            li[index].style.display = "block";
+            li[index].style.display = "flex";
 
         }else{
             li[index].style.display = "none";
@@ -33,21 +33,16 @@ filterMinPriceInput.addEventListener('keyup', filterByMinPrice);
 function filterByMinPrice(){
 
     let filterMinPriceValue = filterMinPriceInput.value.toUpperCase()
-    console.log(filterMinPriceValue + 1);
 
     let ul = document.getElementById('houses');
 
     let li = ul.querySelectorAll('li.house');
 
-    console.log(filterMinPriceValue);
+    console.log(+filterMinPriceValue + 3);
     for (let index = 0; index < li.length; index++) {
         let h2 = li[index].getElementsByClassName('searchprice')[0];
-        console.log(h2);
-        let h2int = parseInt(h2)
-        console.log(h2int)
-        let valueint = parseInt(filterMinPriceValue)
-        if(h2int >= valueint){
-            li[index].style.display = "block";
+        if(h2.innerHTML.toUpperCase().indexOf(filterMinPriceValue) > -1){
+            li[index].style.display = "flex";
 
         }else{
             li[index].style.display = "none";
@@ -73,7 +68,7 @@ function filterHousingType(){
         let h2 = li[index].getElementsByClassName('housingType')[0];
 
         if(h2.innerHTML.toUpperCase().indexOf(filterHousingTypeValue) > -1){
-            li[index].style.display = "block";
+            li[index].style.display = "flex";
 
         }else{
             li[index].style.display = "none";
@@ -101,7 +96,7 @@ function filterNumberRooms(){
 
         console.log(h3)
         if(h3.innerHTML.toUpperCase().indexOf(filterNumberRoomsValue) > -1){
-            li[index].style.display = "block";
+            li[index].style.display = "flex";
 
         }else{
             li[index].style.display = "none";
@@ -111,13 +106,108 @@ function filterNumberRooms(){
     }
 }
 
-validate();
+function checkGWE(){
+    let ul = document.getElementById('houses');
 
-function validate() {
-    var remember = document.getElementById("GWEcheck");
-    if (remember.checked) {
-      alert("checked");
-    } else {
-      console.log("hi");
+    let li = ul.querySelectorAll('li.house');
+if (GWEcheck.checked)
+{
+    for (let index = 0; index < li.length; index++) {
+        let h4 = li[index].getElementsByTagName('h4')[0];
+        console.log(h4);
+
+        if(h4.innerHTML === "yes"){
+            li[index].style.display = "flex";
+
+        }else{
+            li[index].style.display = "none";
+
+        }
+        
+    }
+}
+else {
+    for (let index = 0; index < li.length; index++) {
+        let h4 = li[index].getElementsByTagName('h4')[0];
+        console.log(h4);
+        li[index].style.display = "flex";
+        
+    }
+}
+}
+function checkFacilities(){
+    let ul = document.getElementById('houses');
+
+    let li = ul.querySelectorAll('li.house');
+if (facilitiesStatus.checked)
+{
+    for (let index = 0; index < li.length; index++) {
+        let p = li[index].getElementsByClassName('facilitiesstate')[0];
+        if(p.innerHTML === "yes"){
+            li[index].style.display = "flex";
+
+        }else{
+            li[index].style.display = "none";
+
+        }
+        
+    }
+}
+else {
+    for (let index = 0; index < li.length; index++) {
+        let p = li[index].getElementsByClassName('facilitiesstate')[0];
+        console.log(p);
+        li[index].style.display = "flex";
+        
+    }
+}
+}
+
+let filterRoomSizeInput = document.getElementById('roomsizefilter');
+filterRoomSizeInput.addEventListener('keyup', filterByRoomSize);
+
+function filterByRoomSize(){
+
+    let filterRoomSizeValue = filterRoomSizeInput.value.toUpperCase()
+
+    let ul = document.getElementById('houses');
+
+    let li = ul.querySelectorAll('li.house');
+
+    console.log(filterRoomSizeValue);
+    for (let index = 0; index < li.length; index++) {
+        let h6 = li[index].getElementsByClassName('roomsize')[0];
+        if(h6.innerHTML.toUpperCase().indexOf(filterRoomSizeValue) > -1){
+            li[index].style.display = "flex";
+
+        }else{
+            li[index].style.display = "none";
+
+        }
+        
+    }
+}
+let filterOccupantsInput = document.getElementById('filterbyoccupants');
+filterOccupantsInput.addEventListener('keyup', filterNumberOccupants);
+
+function filterNumberOccupants(){
+
+    let filterRoomSizeValue = filterOccupantsInput.value.toUpperCase()
+
+    let ul = document.getElementById('houses');
+
+    let li = ul.querySelectorAll('li.house');
+
+    console.log(filterRoomSizeValue);
+    for (let index = 0; index < li.length; index++) {
+        let h6 = li[index].getElementsByClassName('numberoccupants')[0];
+        if(h6.innerHTML.toUpperCase().indexOf(filterRoomSizeValue) > -1){
+            li[index].style.display = "flex";
+
+        }else{
+            li[index].style.display = "none";
+
+        }
+        
     }
 }
